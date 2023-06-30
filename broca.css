@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.header{
+    position: relative;
+}
+
+.header-top {
+    background: #2d2f4b;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    height: 50px;
+}
+
+.header_top_article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_top_icons{
+    color: #f76f01;
+    padding: 10px;
+    border-right: 1px solid #fff;
+}
+
+.header_top_text{
+    margin: 15px;
+}
+
+.header_top_text span {
+    color: green;
+    font-size: 0.7rem;
+    font-weight: 600;
+    font-family: 'poppins' , sans-serif;
+}
+/**TRAITEMENT DE LA NAV****/
+.nav{
+    height: 15vh;
+    width: 100%;
+    background: linear-gradient(rgba(32,3,3,0.602), rgba(32,3,3,0.52)),
+    url(images/mike.jpg) center/cover;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 12px;
+}
+
+.nav_items{
+    display: flex;
+}
+
+.link{
+    margin-left: 15px;
+    color: rgb(32, 32, 58);
+    margin-top: 10px;
+    text-transform: uppercase;
+    background: #0e0d0d;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.link:hover{
+    background: linear-gradient(to left bottom, rgba(7, 128, 121, 0.918),
+    rgba(255, 255, 255, 0.918));
+}
+
+.link a{
+    color: green;
+}
+
+/**LOGO***/
+.logo{
+    margin-top: 10px;
+}
+
+.logo a span {
+    color: rgb(19, 169, 196);
+    font-weight: bold;
+}
+
+.logo a{
+    font-size: 1,3rem;
+    color: rgb(244, 250, 250);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu_icon{
+    display: flex;
+    margin-top: 10px;
+    color: rgb(226, 243, 243);
+    font-size: 1.4rem;
+}
+
+.menu_icon a{
+    color: #b6abb0;
+    padding: 5px;
+}
+
+/***Traitement de la sections****/
+
+.brocante_section{
+    background: #617e9e;
+}
+
+.section_element{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.brocante-header{
+    margin: 3rem 0;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.brocante-header h3{
+    text-transform: uppercase;
+    color: rgb(5, 117, 52);
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+}
+
+.brocante-header h1{
+    color: #fff;
+    font-family: 'lobster', cursive;
+}
+
+.brocante {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(19%, 1fr));
+    grid-gap: 3rem;
+    margin: 1rem 0;
+}
+
+
+.brocante_unique{
+    background: #efebcf;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 1rem;
+    grid-gap: 1rem;
+}
+
+.brocante_unique img{
+    width: 100%;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+}
+
+.brocante_nom{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    background: #08692d;
+    color: #fff;
+    font-family: 'lobster', cursive;
+    text-align: center;
+    width: 80%;
+    transform: translateY(50%);
+    justify-self: center;
+    align-self: end;
+    padding: 0.8rem;
+    font-size: 1.3rem;
+}
+
+.brocante_detail, 
+.brocante_detail1{
+    margin-top: 1rem;
+}
+
+.brocante_detail, 
+.brocante_detail1,
+.brocante_detail2, 
+.brocante_detail3,
+.brocante_detail4, 
+.brocante_detail5{
+    font-size: 0.8rem;
+    margin-left: 1rem;
+    display: flex;
+    opacity: 0.7;
+    align-items: center;
+}
+
+.brocante_detail i, 
+.brocante_detail1 i,
+.brocante_detail2 i, 
+.brocante_detail3 i,
+.brocante_detail4 i, 
+.brocante_detail5 i{
+    margin-left: 1rem;
+    padding-right: 0.8rem;
+}
+
+.prix{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    margin-left: 2rem;
+}
+
+.prix_btn{
+    font-size: 0.8rem;
+    font-family: 'lobster', cursive;
+    font-weight: 400;
+    color: black;
+    font-style: italic;
+}
+
+
+.prix_btn span{
+    color: rgb(199, 180, 7);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.prix_btn:last-child{
+    font-size: 0.8rem;
+}
+
+.btn_reserve{
+    background: #f76f01;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 100%;
+}
+
+/***Traitement section 1****/
+
+
+.brocante_section{
+    background: url(images/souliers.jpg);
+    border-radius: 1.8rem;
+}
+
+.section_element{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.brocante-header{
+    margin: 3rem 0;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.brocante-header h3{
+    text-transform: uppercase;
+    color: rgb(189, 73, 20);
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+}
+
+.brocante-header h1{
+    color: #fff;
+    font-family: 'lobster', cursive;
+}
+
+.brocante {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(19%, 1fr));
+    grid-gap: 3rem;
+    margin: 1rem 0;
+}
+
+
+.brocante_unique{
+    background: #efebcf;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 1rem;
+    grid-gap: 1rem;
+}
+
+.brocante_unique img{
+    width: 100%;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+}
+
+.brocante_nom{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    background: #08692d;
+    color: #fff;
+    font-family: 'lobster', cursive;
+    text-align: center;
+    width: 80%;
+    transform: translateY(50%);
+    justify-self: center;
+    align-self: end;
+    padding: 0.8rem;
+    font-size: 1.3rem;
+}
+
+.brocante_detail, 
+.brocante_detail1{
+    margin-top: 1rem;
+}
+
+.brocante_detail, 
+.brocante_detail1,
+.brocante_detail2, 
+.brocante_detail3,
+.brocante_detail4, 
+.brocante_detail5{
+    font-size: 0.8rem;
+    margin-left: 1rem;
+    display: flex;
+    opacity: 0.7;
+    align-items: center;
+}
+
+.brocante_detail i, 
+.brocante_detail1 i,
+.brocante_detail2 i, 
+.brocante_detail3 i,
+.brocante_detail4 i, 
+.brocante_detail5 i{
+    margin-left: 1rem;
+    padding-right: 0.8rem;
+}
+
+.prix{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    margin-left: 2rem;
+}
+
+.prix_btn{
+    font-size: 0.8rem;
+    font-family: 'lobster', cursive;
+    font-weight: 400;
+    color: black;
+    font-style: italic;
+}
+
+
+.prix_btn span{
+    color: rgb(199, 180, 7);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.prix_btn:last-child{
+    font-size: 0.8rem;
+}
+
+.btn_reserve{
+    background: #f76f01;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 100%;
+}
+
+/******Traitement de la section 2****/
